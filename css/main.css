@@ -587,11 +587,41 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.backdrop__button:hover, .backdrop__button:focus {
+  fill: #2196f3;
+}
+.backdrop__icon {
+  width: 11px;
+  height: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.backdrop.is-hidden__modal {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms, visibility 250ms;
 }
 
 .form-title {
@@ -917,39 +947,10 @@ body {
 
 /* Futer */
 /* Модальное окно */
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms, visibility 250ms;
-}
-
-.close-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-}
-
-.close-btn:hover .close,
-.close-btn:focus .close {
-  fill: var(--accent-color);
 }
 
 .close {
