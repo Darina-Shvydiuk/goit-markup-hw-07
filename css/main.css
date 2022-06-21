@@ -282,6 +282,91 @@ body {
   padding-bottom: 27px;
 }
 
+.command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-color-command);
+}
+.command__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.command__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.command__card {
+  width: 270px;
+  margin-right: 30px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.command__card:last-child {
+  margin-right: 0;
+}
+.command__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.command__function {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.inner-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.social-network-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-network-list__item {
+  width: 44px;
+  height: 44px;
+}
+.social-network-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-network-list__link {
+  display: flex;
+  height: 100%;
+  background-color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-network-list__link:hover, .social-network-list__link:focus {
+  background-color: var(--accent-color);
+}
+.social-network-list__link:hover .social-network-list__icon, .social-network-list__link:focus .social-network-list__icon {
+  fill: var(--white-color);
+}
+.social-network-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-icon);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*Page-header */
 /* Header */
 /* ALT + SHIFT + F*/
@@ -299,109 +384,9 @@ body {
   padding-bottom: 94px;
 }
 
-.section-comand-brg {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--background-color-command);
-}
-
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 /* Features */
 /* What are we doing */
 /* Command */
-.social-list,
-.social-list-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social-list > li {
-  width: 44px;
-  height: 44px;
-}
-
-.social-list > li:not(:last-child) {
-  margin-right: 10px;
-}
-
-.link-icon {
-  display: flex;
-  height: 100%;
-  background-color: var(--white-color);
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-icon:hover,
-.link-icon:focus {
-  background-color: var(--accent-color);
-}
-
-.link-icon:hover .social-network,
-.link-icon:focus .social-network {
-  fill: var(--white-color);
-}
-
-.social-network {
-  width: 20px;
-  height: 20px;
-  fill: var(--color-icon);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.command-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.command-list .card {
-  width: 270px;
-  margin-right: 30px;
-  background-color: var(--white-color);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.command-list .card:last-child {
-  margin-right: 0;
-}
-
-.team-photo {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-.command-list .title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.command-list .desc {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
 /* Clients */
 .client-list {
   display: flex;
