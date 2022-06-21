@@ -391,55 +391,55 @@
     <!-- Подвал -->
     <footer class="page-footer">
         <div class="container">
-            <div class="page-footer__inner">
-                <div class="page-footer__inner-address">
+            <div class="page-footer__wrapper">
+                <div class="page-footer__inner">
                     <a href="/" class="page-footer__logo">Web<span class="page-footer__logo--white">Studio</span></a>
                     <address>
                         <ul class="address-list">
-                            <li>
-                                <a href="г.Киев,пр-тЛесиУкраинки,26" class="street">г. Киев, пр-т Леси Украинки, 26</a>
+                            <li class="address-list__item">
+                                <a href="г.Киев,пр-тЛесиУкраинки,26" class="address-list__link address-list__link--street">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li>
-                                <a href="mailto:info@example.com" class="e-mail">info@example.com</a>
+                            <li class="address__item">
+                                <a href="mailto:info@example.com" class="address-list__link">info@example.com</a>
                             </li>
-                            <li>
-                                <a href="tel:+380991111111" class="tel">+38 099 111 11 11</a>
+                            <li class="address__item">
+                                <a href="tel:+380991111111" class="address-list__link">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
 
-                <div class="social-block">
-                    <h3 class="footer-title title">присоединяйтесь</h3>
+                <div class="inner-social">
+                    <h3 class="page-footer__title">присоединяйтесь</h3>
 
-                    <ul class="social-list-footer">
-                        <li>
-                            <a class="link-icon footer" href="">
-                                <svg class="social-network footer">
+                    <ul class="social-network-list">
+                        <li class="social-network-list__item">
+                            <a class="social-network-list__link" href="">
+                                <svg class="social-network-list__icon">
                                     <use href="./images/sprite-new.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li>
-                            <a class="link-icon footer" href="">
-                                <svg class="social-network footer">
+                        <li class="social-network-list__item">
+                            <a class="social-network-list__link" href="">
+                                <svg class="social-network-list__icon">
                                     <use href="./images/sprite-new.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li>
-                            <a class="link-icon footer" href="">
-                                <svg class="social-network footer">
+                        <li class="social-network-list__item">
+                            <a class="social-network-list__link" href="">
+                                <svg class="social-network-list__icon">
                                     <use href="./images/sprite-new.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li>
-                            <a class="link-icon footer" href="">
-                                <svg class="social-network footer">
+                        <li class="social-network-list__item">
+                            <a class="social-network-list__link" href="">
+                                <svg class="social-network-list__icon">
                                     <use href="./images/sprite-new.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -449,15 +449,15 @@
 
 
                 <div class="e-mail-block">
-                    <h3 class="footer-title title">Подпишитесь на рассылку</h3>
+                    <h3 class="page-footer__title">Подпишитесь на рассылку</h3>
 
-                    <form class="e-mail-form" autocomplete="on">
-                        <label class="email">
-                            <span class="label-hidden">E-mail</span>
-                            <input class="field" type="email" name="email" placeholder=" E-mail" required>
+                    <form class="page-footer-form" autocomplete="on">
+                        <label class="page-footer-form__label">
+                            <span class="page-footer-form__text">E-mail</span>
+                            <input class="page-footer-form__field" type="email" name="email" placeholder=" E-mail" required>
                         </label>
-                        <button class="button-subscribe" type="submit">Подписаться
-                            <svg class="icon-send">
+                        <button class="page-footer-form__button" type="submit">Подписаться
+                            <svg class="page-footer-form__icon">
                                 <use href="./images/sprite-new.svg#icon-icon-send"></use>
                             </svg>
                         </button>
