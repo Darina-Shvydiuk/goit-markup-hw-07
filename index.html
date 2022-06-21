@@ -412,34 +412,34 @@
                 <div class="inner-social">
                     <h3 class="page-footer__title">присоединяйтесь</h3>
 
-                    <ul class="social-network-list">
-                        <li class="social-network-list__item">
-                            <a class="social-network-list__link" href="">
-                                <svg class="social-network-list__icon">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="">
+                                <svg class="social-list__icon">
                                     <use href="./images/sprite-new.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li class="social-network-list__item">
-                            <a class="social-network-list__link" href="">
-                                <svg class="social-network-list__icon">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="">
+                                <svg class="social-list__icon">
                                     <use href="./images/sprite-new.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li class="social-network-list__item">
-                            <a class="social-network-list__link" href="">
-                                <svg class="social-network-list__icon">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="">
+                                <svg class="social-list__icon">
                                     <use href="./images/sprite-new.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
 
-                        <li class="social-network-list__item">
-                            <a class="social-network-list__link" href="">
-                                <svg class="social-network-list__icon">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="">
+                                <svg class="social-list__icon">
                                     <use href="./images/sprite-new.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -448,7 +448,7 @@
                 </div>
 
 
-                <div class="e-mail-block">
+                <div class="inner-sub">
                     <h3 class="page-footer__title">Подпишитесь на рассылку</h3>
 
                     <form class="page-footer-form" autocomplete="on">
@@ -470,7 +470,7 @@
 
     <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden" data-backdrop>
-        <div class="modal" data-modal>
+        <div class="backdrop__modal" data-modal>
             <button data-modal-close class="close-btn" data-close-modal>
                 <svg class="close" width="11" height="11">
                     <use href="./images/sprite-new.svg#icon-close"></use>
@@ -478,57 +478,57 @@
             </button>
 
             <!-- Форма Модального окна -->
-            <div class="form-wrapper">
+            <div class="wrapper">
                 <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
                 <form class="form" autocomplete="on">
 
-                    <div class="input-wrapper">
-                        <label class="input-group">
-                            <span class="input-tag">Имя</span>
-                            <input class="input-field" type="text" name="name" required>
-                            <svg class="input-icon">
+                    <div class="form__inner">
+                        <label class="form__label">
+                            <span class="form__text">Имя</span>
+                            <input class="form__field" type="text" name="name" required>
+                            <svg class="form__icon">
                                 <use href="./images/sprite-new.svg#icon-person"></use>
                             </svg>
                         </label>
 
-                        <label class="input-group">
-                            <span class="input-tag">Телефон</span>
-                            <input class="input-field" type="tel" name="tel" required>
-                            <svg class="input-icon">
+                        <label class="form__label">
+                            <span class="form__text">Телефон</span>
+                            <input class="form__field" type="tel" name="tel" required>
+                            <svg class="form__icon">
                                 <use href="./images/sprite-new.svg#icon-phone"></use>
                             </svg>
                         </label>
 
-                        <label class="input-group">
-                            <span class="input-tag">Почта</span>
-                            <input class="input-field" type="email" name="email" required>
-                            <svg class="input-icon">
+                        <label class="form__label">
+                            <span class="form__text">Почта</span>
+                            <input class="form__field" type="email" name="email" required>
+                            <svg class="form__icon">
                                 <use href="./images/sprite-new.svg#icon-email"></use>
                             </svg>
                         </label>
 
-                        <label class="input-group">
-                            <span class="input-tag">Комментарий</span>
-                            <textarea class="input-textarea-field" type="text" name="comment"
+                        <label class="form__label">
+                            <span class="form__text">Комментарий</span>
+                            <textarea class="form__textarea" type="text" name="comment"
                                 placeholder="Введите текст"></textarea>
                         </label>
                     </div>
 
                     <div class="checkbox-group">
-                        <label class="checkbox-label">
-                            <input class="checkbox-field" type="checkbox" name="consent"
+                        <label class="checkbox-group__label">
+                            <input class="checkbox-group__field" type="checkbox" name="consent"
                                 value="Соглашаюсь с рассылкой и принимаю Условия договора" required />
-                            <span class="fake">
-                                <svg class="checkbox-icon">
+                            <span class="checkbox-group__fake">
+                                <svg class="checkbox-group__icon">
                                     <use href="./images/sprite-new.svg#icon-check"></use>
                                 </svg>
                             </span>
-                            <span class="input-tag-checkbox">Соглашаюсь с рассылкой и принимаю <a class="input-link"
+                            <span class="checkbox-group__text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-group__link"
                                     href="">Условия договора</a></span>
 
                         </label>
                     </div>
-                    <button class="button-send" type="submit">Отправить</button>
+                    <button class="checkbox-group__button" type="submit">Отправить</button>
 
 
             </div>
