@@ -2,11 +2,11 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-color-hero);
+  background-color: $background-color-hero;
   background-image: linear-gradient(
       to bottom,
-      var(--background-color-hero-2),
-      var(--background-color-hero-2)
+      $background-color-hero-2,
+      $background-color-hero-2
     ),
     url(../images/Img-hero.jpg);
   background-size: cover;
@@ -21,7 +21,7 @@
     margin-top: 0;
     margin-bottom: 30px;
 
-    color: var(--white-color);
+    color: $white-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -36,8 +36,8 @@
     min-width: 200px;
     padding: 10px 32px;
 
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-color;
 
     font-family: inherit;
     font-weight: 700;
@@ -54,8 +54,8 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
-      background-color: var(--white-color);
+      color: $accent-color;
+      background-color: $white-color;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
   }

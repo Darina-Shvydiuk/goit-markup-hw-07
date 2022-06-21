@@ -8,17 +8,12 @@
 // Components
 
 @import "./components/header";
-@import './components/hero';
-@import './components/feature';
-@import './components/services';
-@import './components/command';
-@import './components/clients';
-
-
-
-
-
-
+@import "./components/hero";
+@import "./components/feature";
+@import "./components/services";
+@import "./components/command";
+@import "./components/clients";
+// @import './components/footer';
 
 /*Page-header */
 
@@ -34,19 +29,15 @@
 
 /* Site-nav */
 
-
 /* Contacts */
 
-
 /* Hero */
-
 
 /* Section */
 // .section {
 //   padding-top: 94px;
 //   padding-bottom: 94px;
 // }
-
 
 // .section-comand-brg {
 //   padding-top: 94px;
@@ -66,17 +57,11 @@
 //   text-align: center;
 // }
 
-
-
-
-
 /* Features */
 
 /* What are we doing */
 
 /* Command */
-
-
 
 /* Clients */
 // .client-list {
@@ -288,11 +273,11 @@
 }
 
 /* Futer */
-.page-footer {
-  background-color: var(--background-color-footer);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+// .page-footer {
+//   background-color: var(--background-color-footer);
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
 .address-list {
   margin-top: 20px;
@@ -338,15 +323,15 @@
   color: var(--accent-color);
 }
 
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
+// .footer-inner {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: baseline;
+// }
 
-.inner-one {
-  margin-right: 70px;
-}
+// .inner-one {
+//   margin-right: 70px;
+// }
 
 .footer-title {
   color: var(--white-color);
