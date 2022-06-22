@@ -737,19 +737,18 @@ body {
   border: 2px solid #212121;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 8px;
 }
 .checkbox-group__icon {
   width: 11px;
   height: 8px;
   fill: #ffffff;
-  opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-group__text {
